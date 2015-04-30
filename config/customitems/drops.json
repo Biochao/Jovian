@@ -1,0 +1,16 @@
+{   
+  "blocksDrop":[
+    {
+    "id": "chisel:granite",
+    "overrides": true,
+    "drops":[
+        {
+            "id": "HardcoreEnderExpansion:music_disk:5",
+            "min" : 2,
+            "max" : 4,    
+            "chance" : 100.0
+        }
+    ]
+    }
+    ]
+}

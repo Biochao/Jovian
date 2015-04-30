@@ -1,0 +1,36 @@
+{
+  "_name": "Skeleton",
+  "drops": [
+  	{
+		"function" : "add",
+		"id" : "minecraft:log",
+		"damage" : 2,
+		"count": 0.10
+	},
+	{
+      "function": "if_burning",
+      "functions": [
+        {
+          "function": "add",
+          "id": "HardcoreEnderExpansion:music_disk",
+          "damage": 3,
+          "count": 0.25
+        }
+      ]
+    },
+    {
+      "function": "if_wither_skeleton",
+      "function": "if_below_30",
+      "functions": [
+        {
+          "function": "add",
+          "id": "HardcoreEnderExpansion:music_disk",
+          "damage": 4,
+          "count": 0.25
+        }
+      ]
+    }
+	],
+  "pre_stats": [],
+  "stats": []
+}

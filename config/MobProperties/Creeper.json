@@ -1,0 +1,112 @@
+{
+  "_name": "Creeper",
+  "drops": [
+    {
+      "function" : "add",
+      "id" : "minecraft:log",
+      "damage" : 3,
+      "count": 0.10
+    },
+    {
+      "function": "if_burning",
+      "functions": [
+        {
+          "function": "add",
+          "id": "HardcoreEnderExpansion:music_disk",
+          "damage": 0,
+          "count": 0.25
+        }
+      ]
+    },
+    {
+      "function": "if_has_potion_19",
+      "functions": [
+        {
+          "function": "add",
+          "id": "HardcoreEnderExpansion:music_disk",
+          "damage": 1,
+          "count": 0.25
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "_comment": "1% chance of being charged with bonus xp and TNT drops",
+      "function": "all",
+      "count": 0.01,
+      "functions": [
+        {
+          "function": "nbt",
+          "tags": [
+            {
+              "function": "boolean",
+              "name": "powered",
+              "value": true
+            }
+          ]
+        },
+        {
+          "function": "drops",
+          "functions": [
+            {
+              "function": "xp",
+              "operation": "mult",
+              "value": 10
+            },
+            {
+				"function" : "add",
+				"id" : "minecraft:tnt",
+				"count": 2.00
+			}
+          ]
+        }
+      ]
+    },
+    {
+      "_comment": "psycho creeper",
+      "function": "all",
+      "count": 0.03,
+      "functions": [
+        {
+          "function": "name",
+          "value": "Psycho Creeper"
+        },
+        {
+          "function": "modifier",
+          "attribute": "generic.movementSpeed",
+          "value": 0.3,
+          "operator": 1
+        },
+        {
+          "function": "nbt",
+          "tags": [
+            {
+              "function": "byte",
+              "name": "ExplosionRadius",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "function": "ridden_by",
+          "id": "Ozelot",
+          "stats": [
+            {
+              "_comment": "invisibility",
+              "function": "potion",
+              "id": 14,
+              "ambient": true
+            },
+            {
+              "function": "modifier",
+              "attribute": "generic.maxHealth",
+              "override": true,
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

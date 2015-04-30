@@ -1,0 +1,143 @@
+{
+    "copper": {
+        "template": "uniform",
+        "block": "ThermalFoundation:Ore",
+        "material": "stone",
+        "clusterSize": 8,
+        "numClusters": 10,
+        "minHeight": 40,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "tin": {
+        "template": "uniform",
+        "block": {"name": "ThermalFoundation:Ore", "metadata": 1},
+        "material": "stone",
+        "clusterSize": 8,
+        "numClusters": 10,
+        "minHeight": 20,
+        "maxHeight": 55,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "silver": {
+        "template": "uniform",
+        "block": [
+            {"name": "ThermalFoundation:Ore", "metadata": 2, "weight":80},
+            {"name": "ThermalFoundation:Ore", "metadata": 3, "weight":20}
+        ],
+        "material": "stone",
+        "clusterSize": 8,
+        "numClusters": 10,
+        "minHeight": 5,
+        "maxHeight": 30,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "lead": {
+        "template": "uniform",
+        "block": [
+            {"name": "ThermalFoundation:Ore", "metadata": 3, "weight": 90},
+            {"name": "ThermalFoundation:Ore", "metadata": 2, "weight": 10}
+        ],
+        "material": "stone",
+        "clusterSize": 8,
+        "numClusters": 10,
+        "minHeight": 10,
+        "maxHeight": 35,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "nickel": {
+        "template": "uniform",
+        "block": {"name": "ThermalFoundation:Ore", "metadata": 4},
+        "material": "stone",
+        "clusterSize": 4,
+        "numClusters": 2,
+        "minHeight": 5,
+        "maxHeight": 20,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "shiny": {
+        "template": "uniform",
+        "block": {
+            "name": "ThermalFoundation:Ore",
+            "metadata": 5
+        },
+        "material": "stone",
+        "clusterSize": 2,
+        "numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 40,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0,
+            -100
+
+        ]
+    },
+    "mana": {
+        "template": "uniform",
+        "block": {
+            "name": "ThermalFoundation:Ore",
+            "metadata": 6
+        },
+        "clusterSize": 2,
+        "numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 10,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            0,
+            -100
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "events":
+            [
+                {
+                    "event_type": "JOIN_WORLD",
+                    "noDeathDim": "true",
+                    "joinOneEver": "false",
+                    "target": "ALL_PLAYERS",
+                    "tasks": [
+                        {
+                            "task_type": "COMMAND",
+                            "command": "/hqm quest"        
+                        }
+                    ]
+                }
+            ]
+}

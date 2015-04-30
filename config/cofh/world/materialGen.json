@@ -1,0 +1,851 @@
+{
+    //Chisel 2
+    "marble": {
+        "template": "uniform",
+        "block": "chisel:marble",
+		"material": "minecraft:stone",
+        "clusterSize": 50,
+        "numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 256,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "limestone": {
+        "template": "uniform",
+        "block": [
+            {"name": "chisel:limestone", "metadata": 0, "weight": 90}
+        ],
+		"material": "minecraft:stone",
+        "clusterSize": 50,
+        "numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 128,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "andesite": {
+        "template": "uniform",
+        "block": "chisel:andesite",
+        "material": "minecraft:stone",
+        "clusterSize": 50,"numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 256,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "granite": {
+        "template": "uniform",
+        "block": "chisel:granite",
+        "material": "minecraft:stone",
+        "clusterSize": 50,"numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 256,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "diorite": {
+        "template": "uniform",
+        "block": "chisel:diorite",
+        "material": "minecraft:stone",
+        "clusterSize": 50,"numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 256,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+
+    //Inferno World Materials
+    "end_stone": {
+        "template": {
+            "type": "surface", 
+            "generator": "boulder",
+            "sizeVariance": 3,
+            "count": 3
+        },
+        "block": "minecraft:end_stone",
+        "material": "minecraft:netherrack",
+        "clusterSize": 3,
+        "numClusters": 5,
+        "chunkChance": 10,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            2
+        ]
+    },
+    "obsidian": {
+        "template": {
+            "type": "surface", 
+            "generator": "stalagmite",
+            "minHeight": 20,
+            "heightVariance": 5,
+            "heightMod": 5,
+            "sizeVariance": 2
+        },
+        "block": "minecraft:obsidian",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 3,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "glowstone": {
+        "template": {
+            "type": "surface", 
+            "generator": "spike",
+            "minHeight": 7,
+            "heightVariance": 4,
+            "sizeVariance": 2,
+            "positionVariance": 4
+        },
+        "block": "minecraft:glowstone",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "soulsand": {
+        "template": "uniform",
+        "block": "minecraft:soul_sand",
+        "material": "minecraft:netherrack",
+        "clusterSize": 50,
+        "numClusters": 7,
+        "minHeight": 0,
+        "maxHeight": 256,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    // Add Caves
+    "air-cave": {
+        "template": {
+            "type": "uniform", 
+            "generator": "large-vein",
+            "sparse": false
+        },
+        "block": "minecraft:air",
+        "clusterSize": 10,
+        "numClusters": 5,
+        "chunkChance": 10,
+        "minHeight": 0,
+        "maxHeight": 256,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            2
+        ]
+    },
+    // Vanilla overworld materials for Callisto
+    "sand-clay": {
+        "template": "uniform",
+        "block": [
+            {"name": "minecraft:sand", "weight": 90},
+            {"name": "minecraft:clay", "weight": 10}
+        ],
+        "material": "stone",
+        "clusterSize": 30,
+        "numClusters": 10,
+        "minHeight": 10,
+        "maxHeight": 35,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            3
+        ]
+    },
+    // Lakes
+    "yelloriumLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "BigReactors:tile.fluid.yellorium.still",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 500,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "fireWaterLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "EnderIO:blockFire_water",
+        "material": "minecraft:netherrack",
+        "numClusters": 2,
+        "chunkChance": 50,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "enderGooLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "HardcoreEnderExpansion:ender_goo",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 20,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "ironLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.iron",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 25,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "goldLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.gold",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 50,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "copperLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.copper",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 40,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "tinLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.tin",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 40,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "aluminumLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.aluminum",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 30,
+        "minHeight": 5,
+        "maxHeight": 75,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "cobaltLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.colbalt",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 100,
+        "minHeight": 5,
+        "maxHeight": 40,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "arditeLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.ardite",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 100,
+        "minHeight": 5,
+        "maxHeight": 50,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "bronzeLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.bronze",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 70,
+        "minHeight": 5,
+        "maxHeight": 60,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "aluminumbrassLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.alubrass",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 100,
+        "minHeight": 5,
+        "maxHeight": 40,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "manyullynLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.manyullyn",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 200,
+        "minHeight": 5,
+        "maxHeight": 20,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "alumiteLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.alumite",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 80,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "obsidianLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.obsidian",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 10,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "glassLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.glass",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 100,
+        "minHeight": 50,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "emeraldLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:molten.emerald",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 50,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "bloodLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:liquid.blood",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 10,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "nickelLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.nickel",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 60,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "leadLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.lead",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 50,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "silverLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.silver",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 50,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "shinyLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.shiny",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 90,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "invarLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.invar",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 60,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "electrumLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.electrum",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 60,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "steelLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "TConstruct:fluid.molten.steel",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 70,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "redstoneLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "ThermalFoundation:FluidRedstone",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 40,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "pyrotheumLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "ThermalFoundation:FluidPyrotheum",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 40,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "manaLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "ThermalFoundation:FluidMana",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 20,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "coalLake": {
+        "template": {
+            "type": "uniform", 
+            "generator": "lake",
+            "useMaterial": true,
+            "outlineBlock": "minecraft:netherrack"
+        },
+        "block": "ThermalFoundation:FluidCoal",
+        "material": "minecraft:netherrack",
+        "numClusters": 1,
+        "chunkChance": 40,
+        "minHeight": 5,
+        "maxHeight": 70,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    }
+}

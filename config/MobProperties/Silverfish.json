@@ -1,0 +1,18 @@
+{
+  "_name": "Silverfish",
+  "drops": [
+  	{
+      "function": "if_burning",
+      "functions": [
+        {
+          "function": "add",
+          "id": "HardcoreEnderExpansion:music_disk",
+          "damage": 8,
+          "count": 0.25
+        }
+      ]
+    }
+  ],
+  "pre_stats": [],
+  "stats": []
+}

@@ -1,0 +1,108 @@
+{
+  "_name": "Chicken",
+  "drops": [],
+  "pre_stats": [],
+  "stats": [
+    {
+      "_comment": "if this mob is not spawning in the overworld",
+      "function": "!if_in_dimension_0",
+      "functions": [
+        {
+          "_comment": "double the mob's max health",
+          "function": "modifier",
+          "attribute": "generic.maxHealth",
+          "value": 1,
+          "operator": 1
+        },
+        {
+          "_comment": "randomly boost either knockback resistance, max health, or speed, with knockback resistance being the rarest",
+          "function": "choose",
+          "functions": [
+            {
+              "weight": 1,
+              "function": "modifier",
+              "attribute": "generic.knockbackResistance",
+              "value": "0.5~1.0"
+            },
+            {
+              "weight": 2,
+              "function": "modifier",
+              "attribute": "generic.maxHealth",
+              "value": "2.0~4.0",
+              "operator": 1
+            },
+            {
+              "weight": 2,
+              "function": "modifier",
+              "attribute": "geneeric.movementSpeed",
+              "value": "0.4~0.7",
+              "operator": 1
+            }
+          ]
+        },
+        {
+          "_comment": "give them a small chance to drop a spawn egg",
+          "function": "drops",
+          "functions": [
+            {
+              "function": "add",
+              "id": "spawn_egg",
+              "damage": 90,
+              "count": 0.05
+            },
+            {
+              "function": "add",
+              "id": "spawn_egg",
+              "damage": 91,
+              "count": 0.05
+            },
+            {
+              "function": "add",
+              "id": "spawn_egg",
+              "damage": 92,
+              "count": 0.05
+            },
+            {
+              "function": "if_on_block_hay_block",
+              "functions": [
+                {
+                  "function": "add",
+                  "id": "spawn_egg",
+                  "damage": 100,
+                  "count": 0.5
+                },
+                {
+                  "function": "add",
+                  "id": "emerald",
+                  "count": 0.01
+                }
+              ]
+            },
+            {
+              "function": "if_on_block_mycelium",
+              "functions": [
+                {
+                  "function": "add",
+                  "id": "spawn_egg",
+                  "damage": 96,
+                  "count": 0.5
+                }
+              ]
+            },
+            {
+              "function": "if_below_40",
+              "functions": [
+                {
+                  "function": "add",
+                  "id": "spawn_egg",
+                  "damage": 65,
+                  "count": 0.1
+                }
+              ]
+            }
+          ]
+        }
+          ]
+        }
+      ]
+    }

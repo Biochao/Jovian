@@ -1,0 +1,206 @@
+{
+    //tConstruct Aluminum
+    "aluminum": {
+        "template": "uniform",
+        "block": {
+            "name": "TConstruct:SearedBrick",
+            "metadata": 5
+        },
+        "material": "stone",
+        "clusterSize": 6,
+        "numClusters": 4,
+        "minHeight": 44,
+        "maxHeight": 62,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+
+    //Apatite
+    "apatite": {
+        "template": "uniform",
+        "block": {
+            "name": "Forestry:resources",
+            "metadata": 0
+        },
+        "material": "minecraft:stone",
+        "clusterSize": 40,
+        "numClusters": 1,
+        "minHeight": 50,
+        "maxHeight": 128,
+        "retrogen": "false",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+            {"type": "dictionary", "entry": "SANDY"},
+            {"type": "dictionary", "entry": "FOREST"},
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "certus": {
+        "template": "uniform",
+        "block": [
+            {"name": "appliedenergistics2:tile.OreQuartz", "metadata": 0, "weight":90},
+            {"name": "appliedenergistics2:tile.OreQuartzCharged", "metadata": 0, "weight":10}
+        ],
+        "material": "minecraft:stone",
+        "clusterSize": 10,
+        "numClusters": 5,
+        "minHeight": 0,
+        "maxHeight": 55,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "ardite": {
+        "template": "uniform",
+        "block": {
+            "name": "TConstruct:SearedBrick",
+            "metadata": 2
+        },
+        "material": "netherrack",
+        "clusterSize": 2,
+        "numClusters": 10,
+        "minHeight": 0,
+        "maxHeight": 128,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            1
+        ]
+    },
+    "cobalt": {
+        "template": "uniform",
+        "block": {
+            "name": "TConstruct:SearedBrick",
+            "metadata": 1
+        },
+        "material": "netherrack",
+        "clusterSize": 2,
+        "numClusters": 10,
+        "minHeight": 0,
+        "maxHeight": 128,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            1
+        ]
+    },
+    "redstone": {
+        "template": "uniform",
+        "block": [
+            {"name": "redstone_ore", "metadata": 0, "weight":80},
+            {"name": "customitems:red_alloy_ore", "metadata": 0, "weight":20}
+        ],
+        "material": "minecraft:stone",
+        "clusterSize": 16,
+        "numClusters": 3,
+        "minHeight": 0,
+        "maxHeight": 16,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "darkSteel": {
+        "template": "uniform",
+        "block": "customitems:dark_steel_ore",
+        "material": "minecraft:stone",
+        "clusterSize": 16,
+        "numClusters": 3,
+        "minHeight": 0,
+        "maxHeight": 32,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            0
+        ]
+    },
+    "enderium": {
+        "template": "uniform",
+        "block": "customitems:enderium_ore",
+        "material": "end_stone",
+        "clusterSize": 10,
+        "numClusters": 10,
+        "minHeight": 50,
+        "maxHeight": 128,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1
+        ]
+    },
+    "pulsating": {
+        "template": "uniform",
+        "block": "customitems:pulsating_ore",
+        "material": "end_stone",
+        "clusterSize": 16,
+        "numClusters": 5,
+        "minHeight": 50,
+        "maxHeight": 128,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1
+        ]
+    },
+    "fallingvibrant": {
+        "template": "uniform",
+        "block": "customitems:vibrant_ore",
+        "material": "HardcoreEnderExpansion:obsidian_end",
+        "clusterSize": 16,
+        "numClusters": 8,
+        "minHeight": 0,
+        "maxHeight": 140,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "whitelist",
+        "dimensions": [
+            1
+        ]
+    },
+    "vibrant": {
+        "template": "uniform",
+        "block": "customitems:vibrant_ore",
+        "material": "minecraft:obsidian",
+        "clusterSize": 18,
+        "numClusters": 16,
+        "minHeight": 50,
+        "maxHeight": 140,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1
+        ]
+    }
+}

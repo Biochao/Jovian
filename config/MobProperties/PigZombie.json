@@ -1,0 +1,36 @@
+{
+  "_name": "PigZombie",
+  "drops": [{
+	"function" : "add",
+	"id" : "minecraft:log2",
+	"damage" : 0,
+	"count": 0.10
+	}],
+  "pre_stats": [],
+  "stats": [{ 
+  		"function": "all", 
+  		"count": 0.05,
+  		"functions": [
+  			{
+          		"function": "name",
+          		"value": "Mutant Pigman"
+        	}, 
+  			{ 
+  				"function": "ridden_by", 
+  				"id": "Pig", 
+  				"tags": [ 
+  					{ 
+  						"function": "int", 
+  						"name": "InLove", 
+  						"value": 6000 
+  					}, 
+  					{ 
+  						"function": "int", 
+  						"name": "Age", 
+  						"value": -6000 
+  					} 
+  				] 
+  			} 
+  		] 
+  	}]
+}

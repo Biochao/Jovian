@@ -1,0 +1,12 @@
+{
+    "chests": [
+        {
+            "name": "Single item Chest",
+            "invName": "Tiny",
+            "textureName": "crate",
+            "slotMaxStackSize": 1,
+            "invHeight": 1,
+            "invWidth": 1
+        }
+    ]
+}

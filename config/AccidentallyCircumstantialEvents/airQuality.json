@@ -1,0 +1,75 @@
+{
+    "events":
+    [
+    {
+    "event_type": "TICK",
+    "ticks": "100",
+    "tasks": [
+                {
+                    "task_type": "POTION",
+                    "target_type": "SELF",
+                    "target": "",
+                    "id": "19",
+                    "duration": "50",
+                    "level": "0",
+                    "conditions":   [
+                                        {
+                                            "condition_type": "INVENTORY",
+                                            "reversed": "true",
+                                            "modid": "EnderIO",
+                                            "name": "item.darkSteel_helmet",
+                                            "meta": "0"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "0",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "DIMENSION",
+                                            "dim_id": "3"
+                                        }
+
+                    ] 
+                },
+                {
+                    "task_type": "POTION",
+                    "target_type": "SELF",
+                    "target": "",
+                    "id": "20",
+                    "duration": "50",
+                    "level": "2",
+                    "conditions":   [
+                                        {
+                                            "condition_type": "INVENTORY",
+                                            "reversed": "true",
+                                            "modid": "EnderIO",
+                                            "name": "item.darkSteel_helmet",
+                                            "meta": "0"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "0",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "DIMENSION",
+                                            "dim_id": "2"
+                                        }
+
+                    ] 
+                }                   
+            ]
+    }
+    ]
+}

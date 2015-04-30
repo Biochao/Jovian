@@ -1,0 +1,67 @@
+{
+  "_name": "Zombie",
+  "drops": [
+  	{
+		"function" : "add",
+		"id" : "minecraft:log",
+		"damage" : 0,
+		"count": 0.10
+	},
+	{
+      "function": "if_burning",
+      "functions": [
+        {
+          "function": "add",
+          "id": "HardcoreEnderExpansion:music_disk",
+          "damage": 2,
+          "count": 0.25
+        }
+      ]
+    }
+	],
+  "pre_stats": [],
+  "stats": [
+{
+      "_comment": "Zombinaut",
+      "function": "all",
+      "count": 0.01,
+      "functions": [
+        {
+          "function": "name",
+          "value": "Zombinaut"
+        },
+        {
+          "function": "modifier",
+          "attribute": "generic.movementSpeed",
+          "value": 0.3,
+          "operator": 1
+        },
+        {
+              "_comment": "jumpboost",
+              "function": "potion",
+              "id": 8,
+              "ambient": true
+            },
+            {
+				"function": "equip",
+				"id": "EnderIO:item.darkSteel_helmet",
+				"slot": 4,
+        "item_stats": [
+          {
+            "nbt": {
+              "tags": {
+                  "function": "byte",
+                  "name": "Unbreakable",
+                  "value": 1
+              }
+            }
+          }
+        ],
+        "damage": 0,
+				"drop_chance": 0.50
+
+    		}
+       ]
+    }
+  ]
+}

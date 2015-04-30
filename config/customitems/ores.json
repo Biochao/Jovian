@@ -1,0 +1,105 @@
+{
+    "blocks": [         
+        {
+            "textureName": "oreDarkSteel",
+            "name": "Dark Steel Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "oreEnderium",
+            "name": "Enderium Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "dragonEgg",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "canSilkHarvest": "true",
+            "dropItemName": "ThermalFoundation:material:44",
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "oreEnergetic",
+            "name": "Energetic Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "lightLevel": 0.5,
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "oreLumium",
+            "name": "Lumium Ore",
+            "isOpaque": "false",
+            "toolClass": "pickaxe",
+            "stepSound": "glass",
+            "material": "glass",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "lightLevel": 1.0,
+            "canSilkHarvest": "true",
+            "dropItemName": "ThermalFoundation:material:43",
+            "harvestLevel": 1
+        },
+        {
+            "textureName": "orePulsating",
+            "name": "Pulsating Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "portal",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "lightLevel": 0.5,
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "oreRedstoneAlloy",
+            "name": "Conductive Iron Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "harvestLevel": 2
+        },
+        {
+            "textureName": "oreSignalum",
+            "name": "Signalum Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "canSilkHarvest": "true",
+            "dropItemName": "ThermalFoundation:material:42",
+            "harvestLevel": 3
+        },
+        {
+            "textureName": "oreVibrant",
+            "name": "Vibrant Ore",
+            "toolClass": "pickaxe",
+            "stepSound": "stone",
+            "material": "rock",
+            "resistance": 400,            
+            "hardness": 20.0,
+            "lightLevel": 0.7,
+            "harvestLevel": 4
+        },
+        {
+            "textureName": "oreSoularium",
+            "name": "Soularium Ore",
+            "toolClass": "shovel",
+            "stepSound": "sand",
+            "material": "rock",
+            "resistance": 10,            
+            "hardness": 2.0,
+            "slipperiness": 1.1f
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "_name": "Witch",
+  "drops": [{
+	"function" : "add",
+	"id" : "minecraft:dye",
+	"damage" : 3,
+	"count": 0.05
+	}],
+  "pre_stats": [],
+  "stats": []
+}

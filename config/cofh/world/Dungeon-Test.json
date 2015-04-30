@@ -1,0 +1,110 @@
+{
+    "eek_dungeon": {
+        "template": {
+            "type": "uniform", 
+            "generator": "dungeon",
+            "lootTable": [
+                "dungeonChest", 
+                "bonusChest", 
+                {"name": "villageBlacksmith", 
+                "weight": 10}
+            ],
+            "maxChests": 3, 
+            "minHoles": 2, 
+            "maxHoles": 8, 
+            "minHeight": 1, 
+            "maxHeight": 4,
+            "minWidthX": 5, 
+            "maxWidthX": 15, 
+            "minWidthZ": 2, 
+            "maxWidthZ": 4​
+    },
+    "block": "cobblestone",
+    "spawnerFloor": [
+        "cobblestone", {
+            "name": "mossy_cobblestone", 
+            "weight": 32
+        }
+    ],
+    "material": [
+        "stone", "sandstone", "sand", "dirt", "gravel"
+    ],
+    "spawnEntity": [
+        "Zombie", {
+            "entity": "PigZombie", 
+            "weight": 10
+        },
+        {"spawnerTag": {
+            "EntityId": "PigZombie",
+            "MinSpawnDelay": 100, 
+            "MaxSpawnDelay": 200,
+            "SpawnCount": 10,
+            "SpawnData": {
+                "Anger": 900,
+                "IsBaby": true,
+                "CanBreakDoors": true,
+                "CanPickUpLoot": true,
+                "AbsorptionAmount": 30​
+            }
+        }, 
+        "weight": 1
+        }
+    ],​
+    "numClusters": 3,
+    "chunkChance": 15,
+    "minHeight": 0,
+    "maxHeight": 64,
+    "retrogen": "true",
+    "biomeRestriction": "none",
+    "biomes": [],
+    "dimensionRestriction": "blacklist",
+    "dimensions": [
+        -1,
+        1​
+    ]
+    },
+    "creeper-dungeon": {
+        "template": {
+            "type": "uniform",
+            "generator": "dungeon",
+            "spawnEntity": "creeper",
+            "spawnerFloor": [
+                "cobblestone", {
+                    "name": "diamond_ore", 
+                    "weight": 32
+                }
+            ],
+            "lootTable": [
+                "dungeonChest", 
+                "bonusChest", 
+                {"name": "villageBlacksmith", 
+                "weight": 10}
+            ],
+            "maxChests": 3, 
+            "minHoles": 2, 
+            "maxHoles": 8, 
+            "minHeight": 1, 
+            "maxHeight": 4,
+            "minWidthX": 5, 
+            "maxWidthX": 15, 
+            "minWidthZ": 2, 
+            "maxWidthZ": 4​
+        },
+        "block": {
+            "name": "ExtraUtilities:color_stonebrick",
+            "metadata": 13
+        },
+        "numClusters": 1,
+        "chunkChance": 4,
+        "minHeight": 0,
+    "maxHeight": 90,
+        "retrogen": "false",
+        "biomeRestriction": "none",
+        "biomes": [],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    }   
+}
