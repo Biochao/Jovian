@@ -32,5 +32,20 @@
     }
 	],
   "pre_stats": [],
-  "stats": []
+  "stats": [
+    {
+      "_comment": "Pumpkin Skeleton",
+      "function": "all",
+      "count": 0.01,
+      "functions": [
+        {
+        "function": "equip",
+        "id": "minecraft:pumpkin",
+        "slot": 4,
+        "drop_chance": 1.00
+
+        }
+       ]
+    }
+  ]
 }

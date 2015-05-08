@@ -1,6 +1,16 @@
 {
   "_name": "TConstruct.KingSlime",
-  "drops": [],
+  "drops": [{
+      "function": "if_above_looting_4",
+      "functions": [
+        {
+          "function": "add",
+          "id": "MineFactoryReloaded:rubberwood.sapling",
+          "damage": 3,
+          "count": 0.05
+        }
+      ]
+    }],
   "pre_stats": [],
   "stats": []
 }

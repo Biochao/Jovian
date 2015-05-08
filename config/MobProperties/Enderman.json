@@ -4,7 +4,7 @@
     {
       "function": "all",
       "_comment": "this count effectively means only perform the function 5% of the time",
-      "count": 0.05,
+      "count": 0.50,
       "functions": [
         {
           "function": "spawn",

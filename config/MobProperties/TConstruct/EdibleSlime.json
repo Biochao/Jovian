@@ -1,6 +1,39 @@
 {
   "_name": "TConstruct.EdibleSlime",
-  "drops": [],
+  "drops": [
+    {
+      "function": "if_on_block_dirt",
+      "functions": [
+          {
+            "_comment": "falling block",
+            "function": "spawn",
+            "id": "FallingSand",
+            "tags": [
+              {
+                "function": "int",
+                "name": "TileID",
+                "value": 770
+              },
+              {
+                "function": "byte",
+                "name": "Data",
+                "value": 2
+              },
+              {
+                "function": "boolean",
+                "name": "DropItem",
+                "value": false
+              },
+              {
+                "function": "byte",
+                "name": "Time",
+                "value": 1
+              }
+            ]
+          }
+      ]
+    }
+  ],
   "pre_stats": [],
   "stats": []
 }

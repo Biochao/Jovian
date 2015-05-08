@@ -31,6 +31,46 @@
                                             "radius": "25"
                                         },
                                         {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "1",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "2",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "3",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "4",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
                                             "condition_type": "DIMENSION",
                                             "dim_id": "3"
                                         }
@@ -59,6 +99,46 @@
                                             "modid": "rftools",
                                             "name": "environmentalControllerBlock",
                                             "meta": "0",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "1",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "2",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "3",
+                                            "mob": "0",
+                                            "radius": "25"
+                                        },
+                                        {
+                                            "condition_type": "PROXIMITY",
+                                            "reversed": "true",
+                                            "target": "BLOCK",
+                                            "modid": "rftools",
+                                            "name": "environmentalControllerBlock",
+                                            "meta": "4",
                                             "mob": "0",
                                             "radius": "25"
                                         },

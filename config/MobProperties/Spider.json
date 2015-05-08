@@ -32,6 +32,12 @@
             					{
 									"function" : "add",
 									"id" : "minecraft:egg",
+                  "item_stats": {
+                    "function": {
+                      "name": "Mutated Egg",
+                      "lore": "The mother cared for it as if it were her own."
+                    }
+                  },
 									"count": 2.00
 								},
           					]

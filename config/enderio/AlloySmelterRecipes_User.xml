@@ -26,6 +26,6 @@ ore dictionary.
 -->
 
 <AlloySmelterRecipes>
-  
+  <recipeGroup name="Thermal Expansion" enabled="false"/>
 </AlloySmelterRecipes>  
 

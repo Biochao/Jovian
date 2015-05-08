@@ -34,7 +34,7 @@
             {
               "weight": 2,
               "function": "modifier",
-              "attribute": "geneeric.movementSpeed",
+              "attribute": "generic.movementSpeed",
               "value": "0.4~0.7",
               "operator": 1
             }
@@ -70,11 +70,6 @@
                   "id": "spawn_egg",
                   "damage": 100,
                   "count": 0.5
-                },
-                {
-                  "function": "add",
-                  "id": "emerald",
-                  "count": 0.01
                 }
               ]
             },

@@ -2,12 +2,12 @@
   "_name": "Zombie",
   "drops": [
   	{
-		"function" : "add",
-		"id" : "minecraft:log",
-		"damage" : 0,
-		"count": 0.10
-	},
-	{
+		  "function" : "add",
+		  "id" : "minecraft:log",
+		  "damage" : 0,
+		  "count": 0.10
+    },
+    {
       "function": "if_burning",
       "functions": [
         {
@@ -21,7 +21,7 @@
 	],
   "pre_stats": [],
   "stats": [
-{
+    {
       "_comment": "Zombinaut",
       "function": "all",
       "count": 0.01,
@@ -46,18 +46,6 @@
 				"function": "equip",
 				"id": "EnderIO:item.darkSteel_helmet",
 				"slot": 4,
-        "item_stats": [
-          {
-            "nbt": {
-              "tags": {
-                  "function": "byte",
-                  "name": "Unbreakable",
-                  "value": 1
-              }
-            }
-          }
-        ],
-        "damage": 0,
 				"drop_chance": 0.50
 
     		}
